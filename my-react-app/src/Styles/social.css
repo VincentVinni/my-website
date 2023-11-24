@@ -1,0 +1,42 @@
+.main-social-wrapper {
+    margin-bottom: 5%;
+}
+
+.parent-title {
+    margin: 0;
+    font-size: 300%;
+}
+
+.social-chain {
+    display: flex;
+    color: white; 
+    font-size: 150%; 
+}
+
+.social-chain a {
+    margin-top: 5%;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.first {
+    color: #D74D4D;
+}
+
+.second {
+    color: #29A435;
+}
+
+.third {
+    color: #2E93B4; 
+}
+
+.fourth {
+    color: #9F8134; 
+}
+
+.social-chain a:hover {
+    color: grey; /* Change text color on hover */
+    transform: translateY(-5px); /* Lift up effect */
+}
+

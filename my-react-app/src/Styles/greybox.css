@@ -1,0 +1,35 @@
+.main-wrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative; 
+    left: 25%;
+}
+
+.box {
+    height: 40%;
+    width: 40%;
+    background-color: grey;
+    transition: transform 0.3s ease;
+    font-size: 200%;
+}
+
+.two {
+    position: relative; 
+    top: -30%;
+    left: 5%; 
+    background-color: black;
+    color: #29A435;
+}
+
+.three {
+    position: relative; 
+    background-color: #041628; 
+    color: #29658A;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+.box:hover {
+    transform: translateY(-5%); /* Adjust the value as per your preference */
+    /* translateY moves the element up (negative value) on hover */
+}
+

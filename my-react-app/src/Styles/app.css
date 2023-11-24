@@ -1,0 +1,165 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.main_header {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto; 
+  }
+
+.header_name {
+    font-size: 400%;
+    margin-bottom: 1%;
+}
+
+#bottom-headeer-name {
+  position: absolute;
+}
+
+.skip-down-button {
+    margin-top: 1%; 
+    background-color: transparent;
+    border-radius: 50%;
+    width: 3%;
+    height: 5%;
+    border: 2px solid gray;
+    color: grey;
+}
+
+.text-inside-button {
+    margin: 0; 
+    color: grey;
+}
+
+@keyframes jumpAnimation {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    transform: translateY(-10px); /* End position (adjust as needed) */
+  }
+}
+
+/* Adjust the animation when hovering */
+.skip-down-button:hover {
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+
+  /* Define animation keyframes */
+  animation: jumpAnimation 0.5s infinite alternate; /* Apply the animation */
+  animation-play-state: running; /* Restart animation on hover */
+  background-color: white; /* Change background color on click */
+}
+
+.skip-down-button:active {
+  animation-play-state: paused;
+}
+
+/* Global */
+
+body{
+  height: 100vh; 
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+/* body and footer positioning */
+
+#body {
+  position: relative; 
+  margin-top: 50%;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+#body-education {
+  position: absolute; 
+  left: 25%;
+  margin-top: 10%;
+  padding-top: 5%;
+  transition: transform 0.3s ease;
+}
+
+#body-education:hover {
+  transform: translateY(-5%);
+}
+
+#body-projects {
+  position: relative; 
+  margin-top: 70%;
+  padding-top: 3%;
+}
+
+#footer {
+  margin-top: 10%;
+  position: relative; 
+}
+
+#bottom-header-name {
+  position: absolute;
+  font-size: 30px;
+}
+
+#profile-picture {
+  width: auto;
+  height: 350px;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  margin-right: 50px;
+}
+
+.container {
+  display: flex; 
+}
+
+.type {
+  margin-left: 10%;
+  display:inline-block;
+  vertical-align: bottom;
+  width: 150%;
+}
+
+.type > span {
+  display:grid;
+  overflow: hidden;
+  height:1em;
+  font-size: 30px;
+}
+
+.type span span {
+  width:0%;
+  max-width:max-content;
+  overflow: hidden;
+  height:inherit;
+  word-break:break-all;
+  animation:
+    c 1s infinite steps(1),  
+    t 2s linear infinite alternate,
+    m 12s steps(3) infinite;
+}
+.type span span:before {
+  content:" ";
+  display:inline-block;
+}
+
+@keyframes t{
+  90%,100% {width:100%}
+}
+
+@keyframes c{
+  0%,100%{box-shadow:5px 0 0 #0000}
+  50%    {box-shadow:5px 0 0 rgb(255, 255, 255)  }
+}
+
+@keyframes m{
+  100% {transform:translateY(-300%)}
+}
