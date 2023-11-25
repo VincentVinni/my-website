@@ -18,7 +18,7 @@ const EDUCATION = () => {
             </div>
 
             <div class="coursework-stack">
-                <p>Relavent Coursework</p>
+                <p>Relevant Coursework</p>
                 <ul>
                     <li>Structure of Computer Programs (CS61A)</li>
                     <li>Data Structures (CS61B)</li>

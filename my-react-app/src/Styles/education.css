@@ -4,7 +4,7 @@
     background-color: #19182E;
     color: rgb(174, 173, 173);
     border: 10px solid rgba(255, 255, 255, 0.2);
-    width: 200%;
+    width: 100%;
 }
 
 .school-wrapper {
@@ -35,6 +35,6 @@
 
 .education-title {
     position: relative;
-    left: 20%;
+    left: 40%;
     font-size: 200%;
 }

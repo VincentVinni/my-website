@@ -78,7 +78,7 @@ const PROJECTS = () => {
 
                 {isVisibleOne && (
                     <div className="project-one-info info">
-                        <p>Description: Working to <b>reduce latency</b> and achieve <b>serverless infastructure</b> with MSK's blood cells and bone marrow tiling tools</p>
+                        <p><b>Description:</b> Deployed MSK's blood cells and bone marrow web tiling tool to <b>AWS Amplify</b>. Working to achieve <b>serverless infastructure</b>. <b>Reduced tiling latency by 80%</b>.</p>
                         <p><b>Technologies used:</b> Java, AWS Amplify, AWS Fargate, Docker</p>
                     </div>
                 )}
@@ -90,7 +90,7 @@ const PROJECTS = () => {
 
                 {isVisibleTwo && (
                     <div className="project-two-info info">
-                        <p>Description: Working to <b>reduce cloud computing</b> costs by utilizing <b>AWS EC2 spot instance</b> purchases backed by machine learning algorithms</p>
+                        <p><b>Description:</b> Working to <b>reduce cloud computing</b> costs by utilizing <b>AWS EC2 spot instance</b> purchases backed by machine learning algorithms. <b>Reduced average costs by 70%</b>.</p>
                         <p><b>Technologies used:</b> Java, Spring Boot, AWS</p>
                     </div>
                 )}
@@ -103,7 +103,7 @@ const PROJECTS = () => {
 
                 {isVisibleThree && (
                     <div className="project-three-info info">
-                        <p>Description: A <b>web application</b> that uses <b>AI/ML</b> to analyze the lyrical meaning of songs backed by emotional context through Speech Prosody and Emotional Sentiment Analysis</p>
+                        <p><b>Description:</b> A <b>web application</b> that uses <b>AI</b> with <b>OpenAI and HumeAI</b> to analyze the lyrical meaning of songs backed by emotional context through Speech Prosody and Emotional Sentiment Analysis</p>
                         <p><b>Technologies used:</b> ReactJS, NodeJS, MongoDB, Auth0, HumeAI</p>
                     </div>
                 )}
@@ -115,7 +115,7 @@ const PROJECTS = () => {
 
                 {isVisibleFour && (
                     <div className="project-four-info info">
-                        <p>Description: An interactive <b>mobile application</b> with rewards, leaderboard, and live feed and map for Berkeley students to track Berkeley's mascot, Oski, by uploading a picture </p> 
+                        <p><b>Description:</b> A <b>React Native</b> powered <b>mobile application</b> with rewards, leaderboard, and live feed to gamify finding Berkeley's mascot, Oski, by uploading a picture. Utilized <b>React Native Maps</b> to integrate a live map of Oski sightings and <b>Firebase</b> for managing <b>user authentication</b> and <b>database management</b>.</p>
                         <p><b>Technologies used:</b> React Native, Flask, Firebase</p>
                     </div>
                 )}
@@ -128,7 +128,7 @@ const PROJECTS = () => {
 
                 {isVisibleFive && (
                     <div className="project-five-info info">
-                        <p>Description: Recreation of the classic Pokémon game with <b>pseudorandom world generation</b>, customized sprite movement, gameplay mechanics and seeking enemies!</p> 
+                        <p><b>Description:</b> Recreation of the classic Pokémon game with <b>pseudorandom world generation</b> using a <b>graph based implementation</b>. Utilized <b>OOP</b> to customize sprite movement, gameplay mechanics and leveraged <b>Dijkstra's Algorithm</b> for seeking enemies!</p> 
                         <p><b>Technologies used:</b> Java</p>
                     </div>
                 )}
@@ -140,7 +140,7 @@ const PROJECTS = () => {
                 
                 {isVisibleSix && (
                     <div className="project-six-info">
-                        <p>Description: The website you are viewing right now!</p> 
+                        <p><b>Description:</b> The website you are viewing right now! Made with <b>ReactJS</b> :D</p> 
                         <p><b>Technologies used:</b> ReactJS, JSX, CSS</p>
                     </div>
                 )}
@@ -158,7 +158,7 @@ const PROJECTS = () => {
 
                 {isVisibleSeven && (
                     <div className="project-six-info info">
-                        <p>Description: Built and trained a <b>logistic regression classifier</b> to determine whether emails are spam or not spam</p> 
+                        <p><b>Description:</b> Built and trained a <b>logistic regression classifier</b> to determine whether emails are spam or not spam. Received a <b>90% test accuracy</b>.</p> 
                         <p><b>Technologies used:</b> Pandas, Numpy, Scikit-learn</p>
                     </div>
                 )}
