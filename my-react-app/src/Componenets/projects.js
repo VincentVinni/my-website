@@ -67,81 +67,81 @@ const PROJECTS = () => {
 
     return(
         <div className='main-project-wrapper'>
-            <h2> &gt;&gt;&gt; Projects</h2>
+            <h2> &gt;&gt;&gt; <b>Projects</b></h2>
             <div className='project-container'>
 
                 <div className='project' id="project-one">
                     <button onClick={toggleVisibleOne}>{text}</button>
-                    <p>Cloud Developer at MSK Cancer Research Center</p>
+                    <p><b>Cloud Developer at MSK Cancer Research Center</b></p>
                     
                 </div>
 
                 {isVisibleOne && (
                     <div className="project-one-info info">
-                        <p>Description: Working to reduce latency and achieve serverless infastructure with MSK's blood cells and bone marrow tiling tools</p>
-                        <p>Technologies used: Java, AWS Amplify, AWS Fargate, Docker</p>
+                        <p>Description: Working to <b>reduce latency</b> and achieve <b>serverless infastructure</b> with MSK's blood cells and bone marrow tiling tools</p>
+                        <p><b>Technologies used:</b> Java, AWS Amplify, AWS Fargate, Docker</p>
                     </div>
                 )}
 
                 <div className='project row-two'>
                     <button onClick={toggleVisibleTwo}>{text2}</button>
-                    <p>Project Flant</p>
+                    <p><b>Project Flant</b></p>
                 </div>
 
                 {isVisibleTwo && (
                     <div className="project-two-info info">
-                        <p>Description: Working to reduce cloud computing costs by utilizing AWS EC2 spot instance purchases backed by machine learning algorithms</p>
-                        <p>Technologies used: Java, Spring Boot, AWS</p>
+                        <p>Description: Working to <b>reduce cloud computing</b> costs by utilizing <b>AWS EC2 spot instance</b> purchases backed by machine learning algorithms</p>
+                        <p><b>Technologies used:</b> Java, Spring Boot, AWS</p>
                     </div>
                 )}
 
 
                 <div className='project row-three'>
                     <button onClick={toggleVisibleThree}>{text3}</button>
-                    <p>Moodify</p>
+                    <p><b>Moodify</b></p>
                 </div>
 
                 {isVisibleThree && (
                     <div className="project-three-info info">
-                        <p>Description: A web application that uses AI/ML to analyze the lyrical meaning of songs backed by emotional context through Speech Prosody and Emotional Sentiment Analysis</p>
-                        <p>Technologies used: ReactJS, NodeJS, MongoDB, Auth0, HumeAI</p>
+                        <p>Description: A <b>web application</b> that uses <b>AI/ML</b> to analyze the lyrical meaning of songs backed by emotional context through Speech Prosody and Emotional Sentiment Analysis</p>
+                        <p><b>Technologies used:</b> ReactJS, NodeJS, MongoDB, Auth0, HumeAI</p>
                     </div>
                 )}
 
                 <div className='project row-four'>
                     <button onClick={toggleVisibleFour}>{text4}</button>
-                    <p>Where's Oski?</p>
+                    <p><b>Where's Oski?</b></p>
                 </div>
 
                 {isVisibleFour && (
                     <div className="project-four-info info">
-                        <p>Description: An interactive mobile application with rewards, leaderboard, and live feed and map for Berkeley students to track Berkeley's mascot, Oski, by uploading a picture </p> 
-                        <p>Technologies used: React Native, Flask, Firebase</p>
+                        <p>Description: An interactive <b>mobile application</b> with rewards, leaderboard, and live feed and map for Berkeley students to track Berkeley's mascot, Oski, by uploading a picture </p> 
+                        <p><b>Technologies used:</b> React Native, Flask, Firebase</p>
                     </div>
                 )}
 
 
                 <div className='project row-five'>
                     <button onClick={toggleVisibleFive}>{text5}</button>
-                    <p>Pokémon Game</p>
+                    <p><b>Pokémon Game</b></p>
                 </div>
 
                 {isVisibleFive && (
                     <div className="project-five-info info">
-                        <p>Description: Recreation of the classic Pokémon game with pseudorandom world generation, customized sprite movement, gameplay mechanics and seeking enemies!</p> 
-                        <p>Technologies used: Java</p>
+                        <p>Description: Recreation of the classic Pokémon game with <b>pseudorandom world generation</b>, customized sprite movement, gameplay mechanics and seeking enemies!</p> 
+                        <p><b>Technologies used:</b> Java</p>
                     </div>
                 )}
 
                 <div className='project row-six'>
                     <button onClick={toggleVisibleSix}>{text6}</button>
-                    <p>Personal Website</p>
+                    <p><b>Personal Website</b></p>
                 </div>
                 
                 {isVisibleSix && (
                     <div className="project-six-info">
                         <p>Description: The website you are viewing right now!</p> 
-                        <p>Technologies used: ReactJS, JSX, CSS</p>
+                        <p><b>Technologies used:</b> ReactJS, JSX, CSS</p>
                     </div>
                 )}
 
@@ -153,13 +153,13 @@ const PROJECTS = () => {
 
                 <div className='project row-eight'>
                     <button onClick={toggleVisibleSeven}>{text7}</button>
-                    <p>Spam Email Classifier</p>
+                    <p><b>Spam Email Classifier</b></p>
                 </div>
 
                 {isVisibleSeven && (
                     <div className="project-six-info info">
-                        <p>Description: Built and trained a logistic regression classifier to determine whether emails are spam or not spam</p> 
-                        <p>Technologies used: Pandas, Numpy, Scikit-learn</p>
+                        <p>Description: Built and trained a <b>logistic regression classifier</b> to determine whether emails are spam or not spam</p> 
+                        <p><b>Technologies used:</b> Pandas, Numpy, Scikit-learn</p>
                     </div>
                 )}
 

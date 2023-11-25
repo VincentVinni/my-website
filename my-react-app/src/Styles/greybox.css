@@ -24,8 +24,10 @@
 .three {
     position: relative; 
     background-color: #041628; 
-    color: #29658A;
+    color: rgb(174, 173, 173);
     border: 10px solid rgba(255, 255, 255, 0.2);
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .box:hover {

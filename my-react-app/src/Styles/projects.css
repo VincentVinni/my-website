@@ -1,14 +1,20 @@
 .main-project-wrapper {
     width: 300%;
     font-size: 120%;
+    color: rgb(174, 173, 173);
 }
 
 .main-project-wrapper button {
     border: none;
     background-color: transparent;
-    color: white;
+    color: rgb(174, 173, 173);
     margin-right: 20px;
     font-size: 100%;
+}
+
+.main-project-wrapper b {
+    font-size: 110%;
+    color: #bdbaba;
 }
 
 .project-container {
