@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 
 const PROJECTS = () => {
 
-    const [text, setText] = useState('>');
+    const [text, setText] = useState('v');
     const [text2, setText2] = useState('>');
     const [text3, setText3] = useState('>');
     const [text4, setText4] = useState('>');
     const [text5, setText5] = useState('>');
     const [text6, setText6] = useState('>');
     const [text7, setText7] = useState('>');
-    const [isVisibleOne, setVisibleOne] = useState(false); 
+    const [isVisibleOne, setVisibleOne] = useState(true); 
     const [isVisibleTwo, setVisibleTwo] = useState(false); 
     const [isVisibleThree, setVisibleThree] = useState(false); 
     const [isVisibleFour, setVisibleFour] = useState(false); 

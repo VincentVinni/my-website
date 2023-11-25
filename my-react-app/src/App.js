@@ -3,7 +3,7 @@ import NAVBAR from './Componenets/navbar'
 import SOCIALS from './Componenets/socials';
 import GREYBOX from './Componenets/greybox';
 import EDUCATION from './Componenets/education';
-import myImage from './images/me.jpg'; 
+import myImage from './images/me.jpeg'; 
 import PROJECTS from './Componenets/projects';
 
 
