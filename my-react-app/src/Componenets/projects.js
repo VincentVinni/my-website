@@ -78,7 +78,7 @@ const PROJECTS = () => {
 
                 {isVisibleOne && (
                     <div className="project-one-info info">
-                        <p><b>Description:</b> Deployed MSK's blood cells and bone marrow web tiling tool to <b>AWS Amplify</b>. Working to achieve <b>serverless infastructure</b>. <b>Reduced tiling latency by 80%</b>.</p>
+                        <p><b>Description:</b> Deployed MSK's blood cells and bone marrow web tiling tool to <b>AWS Amplify</b>. Working to achieve <b>serverless infastructure</b> by deploying containerized application onto <b>Amazon Fargate</b>. <b>Reduced tiling latency by 80%</b>.</p>
                         <p><b>Technologies used:</b> Java, AWS Amplify, AWS Fargate, Docker</p>
                     </div>
                 )}
