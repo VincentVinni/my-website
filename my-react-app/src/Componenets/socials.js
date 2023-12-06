@@ -1,12 +1,14 @@
 import '../Styles/social.css';
 import React from 'react';
+import resume from '../images/resume.pdf';
+
 
 const SOCIALS = () => {
     return(
         <div class="main-social-wrapper">
             <p class="parent-title">socials</p>
             <div class="social-chain">
-                <a class="first" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">resume</a>
+                <a class="first" href={resume} target="_blank">resume</a>
                 <p> -- </p>
                 <a class="second" href="https://github.com/VincentVinni" target="_blank">github</a>
                 <p> -- </p>
