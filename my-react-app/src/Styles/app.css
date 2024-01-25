@@ -83,7 +83,7 @@ body{
 }
 
 #body-education {
-  position: absolute; 
+  position: relative; 
   width: 60%;
   left: 15%;
   margin-top: 10%;
@@ -97,7 +97,6 @@ body{
 
 #body-projects {
   position: relative; 
-  margin-top: 70%;
   padding-top: 3%;
 }
 
@@ -112,10 +111,11 @@ body{
 }
 
 #profile-picture {
-  width: auto;
   height: 350px;
+  width: auto;
   border: 10px solid rgba(255, 255, 255, 0.2);
-  margin-right: 50px;
+  margin-right: 5%;
+  max-width: 50%;
 }
 
 .container {
@@ -163,4 +163,38 @@ body{
 
 @keyframes m{
   100% {transform:translateY(-300%)}
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 10%; /* Adjust font size for smaller screens */
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #body {
+    flex-direction: column;
+  }
+
+  #profile-picture {
+    width: auto;
+    height: 100px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 70%; 
+  }
+
+  #profile-picture {
+    height: 250px;
+    width: auto;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    margin-right: 5%;
+    max-width: 50%;
+  }
+
 }

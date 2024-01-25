@@ -4,7 +4,8 @@
     background-color: #19182E;
     color: rgb(174, 173, 173);
     border: 10px solid rgba(255, 255, 255, 0.2);
-    width: 100%;
+    width: 150%;
+    min-width: 30%;
 }
 
 .school-wrapper {
@@ -15,12 +16,14 @@
 
 .school-wrapper p {
     font-size: 180%;
+    padding-right: 10%;
 }
 
 .coursework-stack {
     position: relative;
     left: 5%;
     font-size: 140%;
+    padding-right: 10%;
 }
 
 .coursework-stack li {
@@ -38,3 +41,32 @@
     left: 40%;
     font-size: 200%;
 }
+
+@media screen and (max-width: 600px) {  
+    .school-logo {
+      height: auto;
+      margin-right: 2%;
+      max-width: 60%;
+    }
+
+    .school-wrapper {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; /* Centers along the horizontal axis */
+    }
+
+    .school-wrapper p {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {  
+    .school-logo {
+      width: auto;
+      height: 120px;
+      margin-right: 2%;
+    }
+
+    
+}
+  

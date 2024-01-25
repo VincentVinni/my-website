@@ -1,16 +1,10 @@
-.main-wrapper {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    position: relative; 
-    left: 25%;
-}
-
 .box {
     height: 40%;
-    width: 40%;
+    width: 50%;
     background-color: grey;
     transition: transform 0.3s ease;
     font-size: 180%;
+    min-width: 30%;
 }
 
 .two {

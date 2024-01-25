@@ -85,7 +85,7 @@ const PROJECTS = () => {
 
                 <div className='project row-two'>
                     <button onClick={toggleVisibleTwo}>{text2}</button>
-                    <p><b>Project Flant</b></p>
+                    <p><b>TFG Internship: Project Flant</b></p>
                 </div>
 
                 {isVisibleTwo && (

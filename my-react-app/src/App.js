@@ -32,7 +32,7 @@ function App() {
             </span>
           </div>
           
-          <button class="skip-down-button"onClick={() => scrollToSection('body')}>V</button>
+          {/* <button class="skip-down-button"onClick={() => scrollToSection('body')}>V</button> */}
         </div>
       </section>
 

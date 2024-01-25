@@ -11,7 +11,7 @@ const EDUCATION = () => {
 
             <div class="school-wrapper">
                 <img src={cal} alt="school seal" class="school-logo"/>
-                <p><strong>University of California, Berkeley </strong><br /> <br /> 
+                <p>University of California, Berkeley <br /> <br /> 
                    Bachelor of Arts-Computer Science <br /> <br />
                 </p>
                 
