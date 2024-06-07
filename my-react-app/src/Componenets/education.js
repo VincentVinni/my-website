@@ -20,16 +20,17 @@ const EDUCATION = () => {
             <div class="coursework-stack">
                 <p>Relevant Coursework</p>
                 <ul>
+                    <li>Data Structures & Algorithms (CS61B)</li>
+                    <li>Efficient Algorithms (CS170)</li>
+                    <li>Artificial Intelligence & Machine Learning (CS189)</li>
                     <li>Structure of Computer Programs (CS61A)</li>
-                    <li>Data Structures (CS61B)</li>
                     <li>Computer Architecture (CS61C)</li>
                     <li>Discrete Math and Probability Theory (CS70)</li>
                     <li>Database Systems (CS186)</li>
                     <li>Operating Systems (CS162)</li>
-                    <li>Efficient Algorithms (CS170)</li>
+                    <li>Computer Security (CS161)</li>
                     <li>Foundations of Data Science (Data 8)</li>
                     <li>Principles of Data Science (Data 100)</li>
-                    
                 </ul>
                 
             </div>

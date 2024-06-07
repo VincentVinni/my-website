@@ -10,6 +10,9 @@ const PROJECTS = () => {
     const [text5, setText5] = useState('>');
     const [text6, setText6] = useState('>');
     const [text7, setText7] = useState('>');
+    const [text8, setText8] = useState('>');
+    const [text9, setText9] = useState('>');
+    const [text10, setText10] = useState('>');
     const [isVisibleOne, setVisibleOne] = useState(true); 
     const [isVisibleTwo, setVisibleTwo] = useState(false); 
     const [isVisibleThree, setVisibleThree] = useState(false); 
@@ -17,6 +20,9 @@ const PROJECTS = () => {
     const [isVisibleFive, setVisibleFive] = useState(false); 
     const [isVisibleSix, setVisibleSix] = useState(false); 
     const [isVisibleSeven, setVisibleSeven] = useState(false); 
+    const [isVisibleEighth, setVisibleEighth] = useState(false); 
+    const [isVisibleNinth, setVisibleNinth] = useState(false); 
+    const [isVisibleTenth, setVisibleTenth] = useState(false); 
 
 
     const toggleVisibleOne = () => {
@@ -54,44 +60,74 @@ const PROJECTS = () => {
         isVisibleSeven ? setText7('>') : setText7('v');
     }
 
-    // const addParagraph = (id, message) => {
-    //     const lineBreak = document.createElement("br");
-    //     const element = document.getElementById(id);
-    //     const paragraph = document.createElement("p");
-    //     paragraph.textContent = "This is a new paragraph!";
-        
-    //     element.appendChild(lineBreak);
-    //     element.appendChild(paragraph);
-        
-    //   };
+    const toggleVisibleEighth = () => {
+        setVisibleEighth(!isVisibleEighth);
+        isVisibleEighth ? setText8('>') : setText8('v');
+    }
+
+    const toggleVisibleNinth = () => {
+        setVisibleNinth(!isVisibleNinth);
+        isVisibleNinth ? setText9('>') : setText9('v');
+    }
+
+    const toggleVisibleTenth = () => {
+        setVisibleTenth(!isVisibleTenth);
+        isVisibleTenth ? setText10('>') : setText10('v');
+    }
 
     return(
         <div className='main-project-wrapper'>
             <h2> &gt;&gt;&gt; <b>Projects</b></h2>
             <div className='project-container'>
 
+                <div className='project' id="project-eigth">
+                    <button onClick={toggleVisibleEighth}>{text8}</button>
+                    <p><b>Software Engineer Intern at OurCo</b></p>
+                    
+                </div>
+
+                {isVisibleEighth && (
+                    <div className="project-eighth-info info">
+                        <p><b>Description:</b> Built OurCo's third iteration of their mobile app using <b>TypeScript, AWS CDK, and Firebase</b> managing media files and photos with various <b>AWS Resources: EventBridge, Lambda, Kinesis, S3</b>. Further designed <b>GraphQL schemas</b>  with <b>SQL</b> queries and <b>GraphQL resolvers</b> for <b>CRUD operations</b> resulting in <b>60% decrease in app latency</b></p>
+                        <p><b>Technologies used:</b> TypeScript, Python, AWS, GraphQL, PostgreSQL, Terraform</p>
+                    </div>
+                )}
+
+
                 <div className='project' id="project-one">
                     <button onClick={toggleVisibleOne}>{text}</button>
-                    <p><b>Cloud Developer at MSK Cancer Research Center</b></p>
+                    <p><b>Software Engineer Intern at MSK Cancer Research Center</b></p>
                     
                 </div>
 
                 {isVisibleOne && (
                     <div className="project-one-info info">
-                        <p><b>Description:</b> Deployed MSK's blood cells and bone marrow web tiling tool to <b>AWS Amplify</b>. Working to achieve <b>serverless infastructure</b> by deploying containerized application onto <b>Amazon Fargate</b>. <b>Reduced tiling latency by 80%</b>.</p>
-                        <p><b>Technologies used:</b> Java, AWS Amplify, AWS Fargate, Docker</p>
+                        <p><b>Description: </b>Trained and Deployed<b></b> MSK's <b>Convoluted Neural Network</b> powered blood cells and bone marrow web tiling tool on <b>AWS Sagemaker</b>. Acheieved <b>serverless infastructure</b> by deploying containerized application onto <b>Amazon Fargate</b>. <b>Reduced tiling latency by 80%</b>.</p>
+                        <p><b>Technologies used:</b> TypeScript, Java, AWS, Docker</p>
                     </div>
                 )}
 
                 <div className='project row-two'>
                     <button onClick={toggleVisibleTwo}>{text2}</button>
-                    <p><b>TFG Internship: Project Flant</b></p>
+                    <p><b>Software Engineer Intern at TFG: Project Flant</b></p>
                 </div>
 
                 {isVisibleTwo && (
                     <div className="project-two-info info">
                         <p><b>Description:</b> Working to <b>reduce cloud computing</b> costs by utilizing <b>AWS EC2 spot instance</b> purchases backed by machine learning algorithms. <b>Reduced average costs by 70%</b>.</p>
                         <p><b>Technologies used:</b> Java, Spring Boot, AWS</p>
+                    </div>
+                )}
+
+                <div className='project row-three'>
+                    <button onClick={toggleVisibleNinth}>{text9}</button>
+                    <p><b>Compare.AI</b></p>
+                </div>
+
+                {isVisibleNinth && (
+                    <div className="project-three-info info">
+                        <p><b>Description:</b> A <b>web application </b> that compiles <b>AI-generated</b> images with real-images side by side. Built a real-time chatbot integrating <b>LangChain with Meta's LLama3</b> incorporating a <b>historically-aware retreiver using FAISS</b> with a <b>VectorStore</b> to mimic human conversations. Additionally, implemented an <b>end-to-end</b> chat feature with <b>WebSockets</b> for users to guess which chat log is human</p>
+                        <p><b>Technologies used:</b> NextJS, Express, NodeJS, Supabase, LangChain, WebSockets, Redux</p>
                     </div>
                 )}
 
@@ -105,6 +141,18 @@ const PROJECTS = () => {
                     <div className="project-three-info info">
                         <p><b>Description:</b> A <b>web application</b> that uses <b>AI</b> with <b>OpenAI and HumeAI</b> to analyze the lyrical meaning of songs backed by emotional context through Speech Prosody and Emotional Sentiment Analysis</p>
                         <p><b>Technologies used:</b> ReactJS, NodeJS, MongoDB, Auth0, HumeAI</p>
+                    </div>
+                )}
+
+                <div className='project'>
+                    <button onClick={toggleVisibleTenth}>{text10}</button>
+                    <p><b>PintOS</b></p>
+                </div>
+
+                {isVisibleTenth && (
+                    <div className="project-three-info info">
+                        <p><b>Description:</b> Extended Stanford's simple operating systems framework for the 80x86 architecture by implementing process control, virtual memory, various syscalls, multi-threading functionalities, locking/blocking, and extensible files with subdirectories and caches</p>
+                        <p><b>Technologies used:</b> C/C++, Assembly, Linux, Shell</p>
                     </div>
                 )}
 
