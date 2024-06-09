@@ -1,6 +1,14 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
+.main_page {
+  left: 0; 
+  margin: 0;
+  padding: 0; 
+  width: 100%;
+  height: 100%;
+}
+
 .main_header {
     position: absolute; 
     left: 0;
@@ -21,6 +29,10 @@
 
 #bottom-headeer-name {
   position: absolute;
+}
+
+.nav-bar {
+  margin-left: 3%;
 }
 
 .skip-down-button {
@@ -65,7 +77,6 @@
 
 body{
   height: 100vh; 
-  padding: 4em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
@@ -76,16 +87,19 @@ body{
 /* body and footer positioning */
 
 #body {
-  position: relative; 
-  margin-top: 50%;
-  padding-left: 50px;
+  display: flex;
+  align-items: center; /* Vertically centers the items */  margin-top: 50%;
   padding-top: 100px;
+  min-width: 30%;
+  width: 100%;
+  height: 100%;
+  left: 5%;
 }
 
 #body-education {
   position: relative; 
   width: 60%;
-  left: 15%;
+  left: 20%;
   margin-top: 10%;
   padding-top: 5%;
   transition: transform 0.3s ease;
@@ -98,10 +112,13 @@ body{
 #body-projects {
   position: relative; 
   padding-top: 3%;
+  left: 2.5%;
 }
 
 #footer {
+  left: 2.5%;
   margin-top: 10%;
+  margin-bottom: 5%;
   position: relative; 
 }
 
@@ -112,15 +129,17 @@ body{
 
 #profile-picture {
   height: 350px;
-  width: auto;
+  width: 350px;
   border: 10px solid rgba(255, 255, 255, 0.2);
   margin-right: 5%;
-  max-width: 50%;
+  min-height: 350px;
+  min-width: 350px; 
+  
 }
 
-.container {
+/* .container {
   display: flex; 
-}
+} */
 
 .type {
   margin-left: 10%;
@@ -180,6 +199,15 @@ body{
   #profile-picture {
     width: auto;
     height: 100px;
+  }
+
+  #body-education {
+    left: 0;
+    width: 100%;
+  }
+
+  #body-projects {
+    left: 0; 
   }
 
 }

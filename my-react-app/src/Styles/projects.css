@@ -22,7 +22,7 @@
 }
 
 .project {
-    width: 150%;
+    width: 100%;
     display: flex;
 }
 
@@ -33,5 +33,11 @@
 .info {
     width: 50%;
     position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .project {
+        width: 50%;
+    }
 }
 

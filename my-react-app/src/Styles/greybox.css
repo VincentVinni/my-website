@@ -1,18 +1,10 @@
 .box {
-    height: 40%;
     width: 50%;
     background-color: grey;
     transition: transform 0.3s ease;
     font-size: 180%;
-    min-width: 30%;
-}
-
-.two {
-    position: relative; 
-    top: -30%;
-    left: 5%; 
-    background-color: black;
-    color: #29A435;
+    min-width: 300px; /* Adjust this value as needed */
+    min-height: 200px; /* Adjust this value as needed */
 }
 
 .three {
@@ -25,7 +17,7 @@
 }
 
 .box:hover {
-    transform: translateY(-5%); /* Adjust the value as per your preference */
+    transform: translateY(-5%); 
     /* translateY moves the element up (negative value) on hover */
 }
 

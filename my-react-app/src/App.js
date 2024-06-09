@@ -18,6 +18,10 @@ function App() {
   return (
     <div class="main_page">
       
+      <section class="nav-bar">
+        <NAVBAR></NAVBAR>
+      </section>
+
       <section class="container column" id="main_header">
         <div class="main_header">
           <h2 class="header_name">Vincent Myint</h2>
@@ -36,27 +40,24 @@ function App() {
         </div>
       </section>
 
-      <section class="nav-bar">
-        <NAVBAR></NAVBAR>
-      </section>
-
       <section class="container column" id="body">
-        {/* <h2 class="header_name" id="bottom-header-name">"Be crazy enough to think you can change the world"</h2> */}
         <GREYBOX id="greybox-middle"></GREYBOX>
         <img src={myImage} alt="profile" id="profile-picture"/>
       </section>
 
-      <section class="container column" id="body-education">
+      <section class="container column mb-100" id="body-education">
         <EDUCATION></EDUCATION>
       </section>
 
-      <section class="container column" id="body-projects">
+      <section class="container column mb-100" id="body-projects">
         <PROJECTS></PROJECTS>        
       </section>
 
       <section class="container column" id="footer">
         <SOCIALS></SOCIALS>
       </section>
+
+      <p><br></br></p>
 
       
     </div>

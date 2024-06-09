@@ -4,8 +4,9 @@
     background-color: #19182E;
     color: rgb(174, 173, 173);
     border: 10px solid rgba(255, 255, 255, 0.2);
-    width: 150%;
-    min-width: 30%;
+    width: 100%;
+    min-width: 300px; /* Adjust this value as needed */
+    min-height: 200px; /* Adjust this value as needed */
 }
 
 .school-wrapper {
@@ -57,6 +58,10 @@
 
     .school-wrapper p {
         padding-left: 10%;
+    }
+
+    .education-main-wrapper {
+        width: 100%; 
     }
 }
 
