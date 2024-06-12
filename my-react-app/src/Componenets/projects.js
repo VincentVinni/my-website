@@ -13,6 +13,7 @@ const PROJECTS = () => {
     const [text8, setText8] = useState('>');
     const [text9, setText9] = useState('>');
     const [text10, setText10] = useState('>');
+    const [text11, setText11] = useState('>');
     const [isVisibleOne, setVisibleOne] = useState(true); 
     const [isVisibleTwo, setVisibleTwo] = useState(false); 
     const [isVisibleThree, setVisibleThree] = useState(false); 
@@ -23,6 +24,7 @@ const PROJECTS = () => {
     const [isVisibleEighth, setVisibleEighth] = useState(false); 
     const [isVisibleNinth, setVisibleNinth] = useState(false); 
     const [isVisibleTenth, setVisibleTenth] = useState(false); 
+    const [isVisibleEleven, setVisibleEleven] = useState(false); 
 
 
     const toggleVisibleOne = () => {
@@ -75,10 +77,30 @@ const PROJECTS = () => {
         isVisibleTenth ? setText10('>') : setText10('v');
     }
 
+    const toggleVisibleEleven = () => {
+        setVisibleEleven(!isVisibleEleven);
+        isVisibleEleven ? setText11('>') : setText11('v');
+    }
+
     return(
         <div className='main-project-wrapper'>
             <h2> &gt;&gt;&gt; <b>Projects</b></h2>
             <div className='project-container'>
+
+                <div className='project' id="project-eleven">
+                    <button onClick={toggleVisibleEleven}>{text11}</button>
+                    <p><b>Software Engineer Intern at UCSF</b></p>
+                    
+                </div>
+
+                {isVisibleEleven && (
+                    <div className="project-eleven-info info">
+                        <p>Description: Developed <b>Infastructure as Code</b> to deploy and manage 1Million+ rows of Cancer CT Scan data onto <b>AWS</b> to provision with <b>serverless infastructure</b> with advanced querying functionalities</p>
+                        <p><b>Technologies used:</b> TypeScript, Python, AWS, Terraform, PostgreSQL</p>
+                    </div>
+                )}
+
+
 
                 <div className='project' id="project-eigth">
                     <button onClick={toggleVisibleEighth}>{text8}</button>
@@ -192,12 +214,6 @@ const PROJECTS = () => {
                         <p><b>Technologies used:</b> ReactJS, JSX, CSS</p>
                     </div>
                 )}
-
-
-                {/* <div className='project row-seven'>
-                    <button>&gt;</button>
-                    <p>Ants</p>
-                </div> */}
 
                 <div className='project row-eight'>
                     <button onClick={toggleVisibleSeven}>{text7}</button>

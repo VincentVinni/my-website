@@ -22,10 +22,6 @@
     border: 10px solid rgba(255, 255, 255, 0.2);
     padding-left: 5%;
     padding-right: 5%;
-}
-
-.box:hover {
-    transform: translateY(-5%); /* Adjust the value as per your preference */
-    /* translateY moves the element up (negative value) on hover */
+    height: 55%;
 }
 

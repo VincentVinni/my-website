@@ -1,6 +1,10 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
+.main_page {
+  padding: 0;
+  margin: 0;
+}
 .main_header {
     position: absolute; 
     left: 0;
@@ -47,25 +51,10 @@
   }
 }
 
-/* Adjust the animation when hovering */
-.skip-down-button:hover {
-  transition: transform 0.2s ease-in-out; /* Smooth transition */
-
-  /* Define animation keyframes */
-  animation: jumpAnimation 0.5s infinite alternate; /* Apply the animation */
-  animation-play-state: running; /* Restart animation on hover */
-  background-color: white; /* Change background color on click */
-}
-
-.skip-down-button:active {
-  animation-play-state: paused;
-}
-
 /* Global */
 
 body{
   height: 100vh; 
-  padding: 4em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
@@ -80,29 +69,26 @@ body{
   margin-top: 50%;
   padding-left: 50px;
   padding-top: 100px;
+  height: 600px;
 }
 
 #body-education {
   position: relative; 
-  width: 60%;
-  left: 15%;
+  width: 100%;
   margin-top: 10%;
-  padding-top: 5%;
   transition: transform 0.3s ease;
-}
-
-#body-education:hover {
-  transform: translateY(-5%);
 }
 
 #body-projects {
   position: relative; 
   padding-top: 3%;
+  margin-left: 2%;
 }
 
 #footer {
   margin-top: 10%;
   position: relative; 
+  margin-left: 2%;
 }
 
 #bottom-header-name {
