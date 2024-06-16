@@ -35,9 +35,12 @@
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) { 
     .project {
-        width: 50%;
+        width: 50%; 
+    }
+
+    .info {
+        margin-left: 5%;
     }
 }
-

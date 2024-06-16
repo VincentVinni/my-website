@@ -1,23 +1,37 @@
-.box {
-    width: 50%;
-    background-color: grey;
-    transition: transform 0.3s ease;
-    font-size: 180%;
-    min-width: 300px; /* Adjust this value as needed */
-    min-height: 200px; /* Adjust this value as needed */
+/* greybox.css */
+
+.greybox-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.three {
-    position: relative; 
-    background-color: #041628; 
-    color: rgb(174, 173, 173);
-    border: 10px solid rgba(255, 255, 255, 0.2);
-    padding-left: 5%;
-    padding-right: 5%;
+.header {
+    color: #6093E4; 
+    font-size: 30px; /* Optional: Increase font size for the header */
+    margin-bottom: 10px; /* Space between header and content */
+    font-style: italic;
 }
 
-.box:hover {
-    transform: translateY(-5%); 
-    /* translateY moves the element up (negative value) on hover */
+.greybox-content {
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* More vivid shadow */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 20px;
+    line-height: 1.5;
 }
 
+@media screen and (max-width: 768px) {
+    .greybox-content {
+        width: 75%; /* Increase width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .greybox-content {
+        width: 90%; /* Further increase width on very small screens */
+    }
+}
