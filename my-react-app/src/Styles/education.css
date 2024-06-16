@@ -1,3 +1,4 @@
+/* Existing styles */
 .education-main-wrapper {
     position: relative;
     height: 100%;
@@ -5,15 +6,20 @@
     color: rgb(174, 173, 173);
     width: 100%;
     min-width: 30%;
-    padding-left: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centers text inside the elements */
 }
 
 .school-wrapper {
     display: flex;
     position: relative; 
-    left: 5%;
+    left: 0;
+    justify-content: center; /* Centers horizontally within the flex container */
+    width: 90%; /* Adjust as needed to fit within the parent container */
 }
 
 .school-wrapper p {
@@ -23,12 +29,13 @@
 
 .coursework-stack {
     position: relative;
-    left: 5%;
+    left: 0;
     font-size: 140%;
     padding-right: 10%;
+    width: 90%; /* Adjust as needed to fit within the parent container */
 }
 
-.coursework-stack li {
+.coursework-stack p {
     margin-top: 1%;
 }
 
@@ -40,10 +47,24 @@
 
 .education-title {
     position: relative;
-    left: 40%;
+    left: 0;
     font-size: 200%;
 }
 
+.coursework-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    text-align: left; /* Left-aligns the text within the content */
+    width: 100%; /* Adjust as needed to fit within the parent container */
+}
+
+.coursework-content p {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width to fit your design */
+}
+
+/* Media queries */
 @media screen and (max-width: 600px) {  
     .school-logo {
       height: auto;
@@ -55,6 +76,7 @@
         display: flex; 
         flex-direction: column;
         align-items: center; /* Centers along the horizontal axis */
+        text-align: center; /* Centers text inside the elements */
     }
 
     .school-wrapper p {
@@ -68,7 +90,10 @@
       height: 120px;
       margin-right: 2%;
     }
-
-    
 }
-  
+
+@media screen and (max-width: 800px) {  
+    .coursework-content {
+        padding-left: 10%;
+    }
+}

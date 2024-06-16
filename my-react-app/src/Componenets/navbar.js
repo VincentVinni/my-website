@@ -7,6 +7,7 @@ const NAVBAR = () => {
                 <a href = "#body">ABOUT</a>
                 <a href = "#body-education">EDUCATION</a>
                 <a href = "#body-projects">PROJECTS</a>
+                <a href ="#">PHOTOS</a>
         </nav>
     )
 }

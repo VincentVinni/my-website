@@ -8,16 +8,13 @@ import PROJECTS from './Componenets/projects';
 
 
 function App() {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div class="main_page">
       
+      <section class="nav-bar">
+        <NAVBAR></NAVBAR>
+      </section>
+
       <section class="container column" id="main_header">
         <div class="main_header">
           <h2 class="header_name">Vincent Myint</h2>
@@ -36,9 +33,7 @@ function App() {
         </div>
       </section>
 
-      <section class="nav-bar">
-        <NAVBAR></NAVBAR>
-      </section>
+      
 
       <section class="container column" id="body">
         {/* <h2 class="header_name" id="bottom-header-name">"Be crazy enough to think you can change the world"</h2> */}

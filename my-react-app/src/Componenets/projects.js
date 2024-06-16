@@ -95,7 +95,7 @@ const PROJECTS = () => {
 
                 {isVisibleEleven && (
                     <div className="project-eleven-info info">
-                        <p>Description: Developed <b>Infastructure as Code</b> to deploy and manage 1Million+ rows of Cancer CT Scan data onto <b>AWS</b> to provision with <b>serverless infastructure</b> with advanced querying functionalities</p>
+                        <p>Description: Developed <b>Infastructure as Code</b> to deploy and manage <b>1Million+ rows of Cancer CT Scan data</b> onto <b>AWS</b> to provision with <b>serverless infastructure</b> and advanced querying functionalities</p>
                         <p><b>Technologies used:</b> TypeScript, Python, AWS, Terraform, PostgreSQL</p>
                     </div>
                 )}
